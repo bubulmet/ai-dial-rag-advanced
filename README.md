@@ -35,7 +35,12 @@ By completing this task, you will learn:
 
 3. **Start PostgreSQL with pgvector:**
    ```bash
+   colima start --cpu 2 --memory 4
    docker-compose up -d
+   ...
+   docker-compose stop
+   docker-compose down
+   colima stop
    ```
    This will start PostgreSQL on port 5433 with the pgvector extension enabled.
 
